@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — JU2048</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            color: #1a1a1a;
+            background-color: #ffffff;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 3px solid #776e65;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #776e65;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .header-meta p {
+            font-size: 0.95rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .lang-switcher button {
+            background: none;
+            border: 1px solid #776e65;
+            color: #776e65;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .lang-switcher button:hover {
+            background-color: #f0ece7;
+        }
+
+        .lang-switcher button.active {
+            background-color: #776e65;
+            color: #ffffff;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: #776e65;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #e0dcd5;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #776e65;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #5a5349;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            font-size: 0.92rem;
+        }
+
+        thead th {
+            background-color: #776e65;
+            color: #ffffff;
+            text-align: left;
+            padding: 0.65rem 0.75rem;
+            font-weight: 600;
+        }
+
+        tbody td {
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid #e0dcd5;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f8f6;
+        }
+
+        .contact-block {
+            margin-bottom: 1rem;
+        }
+
+        .contact-block strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0dcd5;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy — JU2048</h1>
+            <div class="header-meta">
+                <p id="last-updated">Last updated: March 1, 2026</p>
+                <nav class="lang-switcher" aria-label="Language">
+                    <button type="button" class="active" onclick="switchLang('en')">EN</button>
+                    <button type="button" onclick="switchLang('ja')">JA</button>
+                    <button type="button" onclick="switchLang('ko')">KO</button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- English -->
+            <div id="lang-en" class="lang-content active">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy explains how JU2048 ("the App"), developed by Justin Mo, handles information when you use the App. We are committed to protecting your privacy and being transparent about our practices.</p>
+
+                <h2>2. Information We Do NOT Collect</h2>
+                <p>The App:</p>
+                <ul>
+                    <li><strong>Does not require account registration or login</strong></li>
+                    <li><strong>Does not collect personal information</strong> (name, email, phone number, etc.)</li>
+                    <li><strong>Does not store data on external servers</strong> — all game data (scores, game state) is stored locally on your device only</li>
+                    <li><strong>Does not use analytics or tracking SDKs</strong> beyond the advertising SDK described below</li>
+                </ul>
+
+                <h2>3. Advertising and Third-Party Data Collection</h2>
+                <p>The App displays advertisements through <strong>Google AdMob</strong>. Depending on your consent choices and device settings, Google AdMob and its partners may collect or process the following data:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Purpose</th>
+                            <th>Condition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Device advertising identifier (IDFA)</td>
+                            <td>Personalized advertising</td>
+                            <td>Only if you grant App Tracking Transparency (ATT) permission</td>
+                        </tr>
+                        <tr>
+                            <td>IP address</td>
+                            <td>Approximate location for ad relevance, fraud prevention</td>
+                            <td>Collected by Google; not accessed by the App</td>
+                        </tr>
+                        <tr>
+                            <td>Ad interaction data</td>
+                            <td>Measuring ad performance</td>
+                            <td>Standard ad serving</td>
+                        </tr>
+                        <tr>
+                            <td>Device information</td>
+                            <td>Ad compatibility and fraud detection</td>
+                            <td>Standard ad serving</td>
+                        </tr>
+                        <tr>
+                            <td>Crash and diagnostics data</td>
+                            <td>Improving ad SDK stability</td>
+                            <td>Standard ad serving</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>For more information on how Google handles data, see:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from apps</a></li>
+                </ul>
+
+                <h2>4. Consent and App Tracking Transparency</h2>
+
+                <h3>UMP (User Messaging Platform) Consent</h3>
+                <p>If you are located in the European Economic Area (EEA), United Kingdom, or other regions requiring consent under GDPR or similar regulations, you will be presented with a consent dialog before any ad-related data collection begins.</p>
+
+                <h3>App Tracking Transparency (ATT)</h3>
+                <p>On iOS 14.5 and later, the App will request your permission before accessing your device's advertising identifier (IDFA). You can:</p>
+                <ul>
+                    <li><strong>Allow tracking</strong> — enables personalized ads based on your activity across apps and websites</li>
+                    <li><strong>Deny tracking</strong> — the App will serve contextual (non-personalized) ads only</li>
+                </ul>
+                <p>You can change your tracking preference at any time in: <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</p>
+
+                <h2>5. Data Stored on Your Device</h2>
+                <p>The App stores the following data locally using <code>UserDefaults</code>:</p>
+                <ul>
+                    <li><strong>Best score</strong> — your highest game score</li>
+                    <li><strong>Ad consent/tracking preferences</strong> — your consent and ATT choices</li>
+                </ul>
+                <p>This data never leaves your device and is not transmitted to any server.</p>
+
+                <h2>6. Children's Privacy</h2>
+                <p>The App is not directed at children under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children. The App's ad configuration does not use child-directed ad serving.</p>
+
+                <h2>7. Data Retention and Deletion</h2>
+                <p>Since no personal data is collected or stored on our servers, there is no data to retain or delete on our end. Local data on your device can be removed by uninstalling the App.</p>
+
+                <h2>8. International Users</h2>
+                <p>The App is available worldwide. Ad-related data processing by Google is subject to Google's own privacy practices and may involve data transfers to countries outside your region.</p>
+
+                <h2>9. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page will reflect any changes. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+                <h2>10. Contact Us</h2>
+                <p>If you have questions or concerns about this Privacy Policy, please contact:</p>
+                <div class="contact-block">
+                    <strong>Justin Mo</strong>
+                    Email: <a href="mailto:ju571nk3n@gmail.com">ju571nk3n@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Japanese -->
+            <div id="lang-ja" class="lang-content">
+                <h2>1. はじめに</h2>
+                <p>本プライバシーポリシーは、Justin Moが開発したJU2048（以下「本アプリ」）が、ご利用時にどのように情報を取り扱うかについて説明します。私たちはお客様のプライバシーを保護し、その取り扱いについて透明性を確保することに努めています。</p>
+
+                <h2>2. 収集しない情報</h2>
+                <p>本アプリは：</p>
+                <ul>
+                    <li><strong>アカウント登録やログインを必要としません</strong></li>
+                    <li><strong>個人情報（氏名、メールアドレス、電話番号など）を収集しません</strong></li>
+                    <li><strong>外部サーバーにデータを保存しません</strong> — すべてのゲームデータ（スコア、ゲーム状態）はお客様のデバイスにのみローカル保存されます</li>
+                    <li><strong>以下に記載する広告SDKを除き、分析・トラッキングSDKを使用しません</strong></li>
+                </ul>
+
+                <h2>3. 広告および第三者によるデータ収集</h2>
+                <p>本アプリは<strong>Google AdMob</strong>を通じて広告を表示します。お客様の同意の選択やデバイスの設定に応じて、Google AdMobおよびそのパートナーが以下のデータを収集または処理する場合があります：</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>データの種類</th>
+                            <th>目的</th>
+                            <th>条件</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>デバイス広告識別子（IDFA）</td>
+                            <td>パーソナライズド広告</td>
+                            <td>App Tracking Transparency（ATT）の許可を付与した場合のみ</td>
+                        </tr>
+                        <tr>
+                            <td>IPアドレス</td>
+                            <td>広告の関連性のためのおおよその位置情報、不正防止</td>
+                            <td>Googleが収集。本アプリはアクセスしません</td>
+                        </tr>
+                        <tr>
+                            <td>広告インタラクションデータ</td>
+                            <td>広告パフォーマンスの測定</td>
+                            <td>標準的な広告配信</td>
+                        </tr>
+                        <tr>
+                            <td>デバイス情報</td>
+                            <td>広告の互換性および不正検出</td>
+                            <td>標準的な広告配信</td>
+                        </tr>
+                        <tr>
+                            <td>クラッシュおよび診断データ</td>
+                            <td>広告SDKの安定性向上</td>
+                            <td>標準的な広告配信</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Googleによるデータの取り扱いの詳細については、以下をご覧ください：</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a></li>
+                    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Googleによるアプリからのデータの使用方法</a></li>
+                </ul>
+
+                <h2>4. 同意とApp Tracking Transparency</h2>
+
+                <h3>UMP（User Messaging Platform）同意</h3>
+                <p>欧州経済領域（EEA）、英国、またはGDPRもしくは類似の規制に基づく同意を必要とするその他の地域にお住まいの場合、広告関連のデータ収集が開始される前に同意ダイアログが表示されます。</p>
+
+                <h3>App Tracking Transparency（ATT）</h3>
+                <p>iOS 14.5以降では、本アプリはデバイスの広告識別子（IDFA）にアクセスする前にお客様の許可を求めます。選択肢は以下の通りです：</p>
+                <ul>
+                    <li><strong>トラッキングを許可</strong> — アプリやウェブサイトを横断したアクティビティに基づくパーソナライズド広告が有効になります</li>
+                    <li><strong>トラッキングを拒否</strong> — 本アプリはコンテキスト広告（非パーソナライズド広告）のみを配信します</li>
+                </ul>
+                <p>トラッキングの設定はいつでも変更できます：<strong>設定 &gt; プライバシーとセキュリティ &gt; トラッキング</strong></p>
+
+                <h2>5. デバイスに保存されるデータ</h2>
+                <p>本アプリは<code>UserDefaults</code>を使用して以下のデータをローカルに保存します：</p>
+                <ul>
+                    <li><strong>ベストスコア</strong> — お客様の最高ゲームスコア</li>
+                    <li><strong>広告の同意/トラッキング設定</strong> — お客様の同意およびATTの選択</li>
+                </ul>
+                <p>これらのデータはデバイスから外部に送信されることはなく、いかなるサーバーにも転送されません。</p>
+
+                <h2>6. 子供のプライバシー</h2>
+                <p>本アプリは13歳未満（またはお客様の管轄区域における該当年齢未満）の子供を対象としていません。私たちは子供から意図的に個人情報を収集することはありません。本アプリの広告設定は、子供向け広告配信を使用していません。</p>
+
+                <h2>7. データの保持と削除</h2>
+                <p>当方のサーバーでは個人データの収集や保存を行っていないため、保持または削除すべきデータはありません。デバイス上のローカルデータは、アプリをアンインストールすることで削除できます。</p>
+
+                <h2>8. 海外のユーザー</h2>
+                <p>本アプリは世界中でご利用いただけます。Googleによる広告関連のデータ処理はGoogle独自のプライバシー慣行に従い、お客様の地域外の国へのデータ転送を伴う場合があります。</p>
+
+                <h2>9. 本プライバシーポリシーの変更</h2>
+                <p>本プライバシーポリシーは随時更新される場合があります。変更があった場合は、ページ上部の「最終更新日」に反映されます。変更後も本アプリを継続してご利用いただくことで、更新されたポリシーに同意したものとみなされます。</p>
+
+                <h2>10. お問い合わせ</h2>
+                <p>本プライバシーポリシーに関するご質問やご懸念がございましたら、以下までご連絡ください：</p>
+                <div class="contact-block">
+                    <strong>Justin Mo</strong>
+                    メール: <a href="mailto:ju571nk3n@gmail.com">ju571nk3n@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Korean -->
+            <div id="lang-ko" class="lang-content">
+                <h2>1. 소개</h2>
+                <p>본 개인정보 처리방침은 Justin Mo가 개발한 JU2048(이하 "본 앱")이 사용자의 정보를 어떻게 처리하는지 설명합니다. 저희는 사용자의 개인정보를 보호하고 그 처리 방식에 대해 투명하게 공개하기 위해 최선을 다하고 있습니다.</p>
+
+                <h2>2. 수집하지 않는 정보</h2>
+                <p>본 앱은:</p>
+                <ul>
+                    <li><strong>계정 등록이나 로그인을 요구하지 않습니다</strong></li>
+                    <li><strong>개인정보(이름, 이메일, 전화번호 등)를 수집하지 않습니다</strong></li>
+                    <li><strong>외부 서버에 데이터를 저장하지 않습니다</strong> — 모든 게임 데이터(점수, 게임 상태)는 사용자의 기기에만 로컬 저장됩니다</li>
+                    <li><strong>아래에 설명된 광고 SDK를 제외하고 분석 또는 추적 SDK를 사용하지 않습니다</strong></li>
+                </ul>
+
+                <h2>3. 광고 및 제3자 데이터 수집</h2>
+                <p>본 앱은 <strong>Google AdMob</strong>을 통해 광고를 표시합니다. 사용자의 동의 선택 및 기기 설정에 따라 Google AdMob 및 그 파트너가 다음 데이터를 수집하거나 처리할 수 있습니다:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>데이터 유형</th>
+                            <th>목적</th>
+                            <th>조건</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>기기 광고 식별자(IDFA)</td>
+                            <td>맞춤형 광고</td>
+                            <td>App Tracking Transparency(ATT) 권한을 부여한 경우에만</td>
+                        </tr>
+                        <tr>
+                            <td>IP 주소</td>
+                            <td>광고 관련성을 위한 대략적 위치, 사기 방지</td>
+                            <td>Google이 수집하며 본 앱은 접근하지 않습니다</td>
+                        </tr>
+                        <tr>
+                            <td>광고 상호작용 데이터</td>
+                            <td>광고 성과 측정</td>
+                            <td>표준 광고 제공</td>
+                        </tr>
+                        <tr>
+                            <td>기기 정보</td>
+                            <td>광고 호환성 및 사기 탐지</td>
+                            <td>표준 광고 제공</td>
+                        </tr>
+                        <tr>
+                            <td>충돌 및 진단 데이터</td>
+                            <td>광고 SDK 안정성 향상</td>
+                            <td>표준 광고 제공</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Google의 데이터 처리 방식에 대한 자세한 내용은 다음을 참조하십시오:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보 처리방침</a></li>
+                    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google의 앱 데이터 사용 방식</a></li>
+                </ul>
+
+                <h2>4. 동의 및 App Tracking Transparency</h2>
+
+                <h3>UMP(User Messaging Platform) 동의</h3>
+                <p>유럽 경제 지역(EEA), 영국 또는 GDPR이나 유사한 규정에 따라 동의가 필요한 기타 지역에 거주하는 경우, 광고 관련 데이터 수집이 시작되기 전에 동의 대화 상자가 표시됩니다.</p>
+
+                <h3>App Tracking Transparency(ATT)</h3>
+                <p>iOS 14.5 이상에서 본 앱은 기기의 광고 식별자(IDFA)에 접근하기 전에 사용자의 허가를 요청합니다. 다음과 같이 선택할 수 있습니다:</p>
+                <ul>
+                    <li><strong>추적 허용</strong> — 앱과 웹사이트 전반의 활동을 기반으로 한 맞춤형 광고가 활성화됩니다</li>
+                    <li><strong>추적 거부</strong> — 본 앱은 문맥 광고(비맞춤형 광고)만 제공합니다</li>
+                </ul>
+                <p>추적 설정은 언제든지 변경할 수 있습니다: <strong>설정 &gt; 개인정보 보호 및 보안 &gt; 추적</strong></p>
+
+                <h2>5. 기기에 저장되는 데이터</h2>
+                <p>본 앱은 <code>UserDefaults</code>를 사용하여 다음 데이터를 로컬에 저장합니다:</p>
+                <ul>
+                    <li><strong>최고 점수</strong> — 사용자의 최고 게임 점수</li>
+                    <li><strong>광고 동의/추적 설정</strong> — 사용자의 동의 및 ATT 선택</li>
+                </ul>
+                <p>이 데이터는 기기 외부로 전송되지 않으며 어떤 서버로도 전송되지 않습니다.</p>
+
+                <h2>6. 아동의 개인정보</h2>
+                <p>본 앱은 13세 미만(또는 해당 관할권의 적용 가능한 연령 미만)의 아동을 대상으로 하지 않습니다. 저희는 아동으로부터 고의로 개인정보를 수집하지 않습니다. 본 앱의 광고 설정은 아동 대상 광고 제공을 사용하지 않습니다.</p>
+
+                <h2>7. 데이터 보유 및 삭제</h2>
+                <p>당사 서버에서는 개인 데이터를 수집하거나 저장하지 않으므로, 보유하거나 삭제할 데이터가 없습니다. 기기의 로컬 데이터는 앱을 삭제하면 제거할 수 있습니다.</p>
+
+                <h2>8. 해외 사용자</h2>
+                <p>본 앱은 전 세계에서 사용할 수 있습니다. Google의 광고 관련 데이터 처리는 Google 자체의 개인정보 보호 관행에 따르며, 사용자의 지역 외 국가로의 데이터 전송이 포함될 수 있습니다.</p>
+
+                <h2>9. 본 개인정보 처리방침의 변경</h2>
+                <p>본 개인정보 처리방침은 수시로 업데이트될 수 있습니다. 변경 사항은 페이지 상단의 "최종 업데이트" 날짜에 반영됩니다. 변경 후에도 본 앱을 계속 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.</p>
+
+                <h2>10. 문의하기</h2>
+                <p>본 개인정보 처리방침에 관한 질문이나 우려 사항이 있으시면 아래로 연락해 주십시오:</p>
+                <div class="contact-block">
+                    <strong>Justin Mo</strong>
+                    이메일: <a href="mailto:ju571nk3n@gmail.com">ju571nk3n@gmail.com</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Justin Mo</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            document.getElementById('lang-' + lang).classList.add('active');
+
+            document.querySelectorAll('.lang-switcher button').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            document.querySelector('.lang-switcher button[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+
+            var updated = document.getElementById('last-updated');
+            if (lang === 'ja') {
+                updated.textContent = '\u6700\u7D42\u66F4\u65B0\u65E5: 2026\u5E743\u67081\u65E5';
+            } else if (lang === 'ko') {
+                updated.textContent = '\uCD5C\uC885 \uC5C5\uB370\uC774\uD2B8: 2026\uB144 3\uC6D4 1\uC77C';
+            } else {
+                updated.textContent = 'Last updated: March 1, 2026';
+            }
+
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
